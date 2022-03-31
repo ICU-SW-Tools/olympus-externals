@@ -310,6 +310,7 @@ define QT5BASE_CONFIGURE_CMDS
 		PKG_CONFIG="$(PKG_CONFIG_HOST_BINARY)" \
 		MAKEFLAGS="-j$(PARALLEL_JOBS) $(MAKEFLAGS)" \
 		./configure \
+		-syslog \
 		-v \
 		-prefix /usr \
 		-hostprefix $(HOST_DIR) \
